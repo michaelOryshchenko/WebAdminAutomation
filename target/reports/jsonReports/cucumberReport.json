@@ -1,0 +1,125 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-04T11:26:44.472Z",
+        "line": 3,
+        "name": "Knowledge Base",
+        "description": "",
+        "id": "all-documents-are-available;knowledge-base",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6064000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browse to url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "url",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.DocumentationsSteps.browseToURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 773000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "log in Admin page with name and password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 23
+                },
+                {
+                  "val": "password",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.DocumentationsSteps.loginAdmin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 798000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click hamburger menu",
+            "match": {
+              "location": "stepDefinitions.DocumentationsSteps.openHamburgerMenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 279000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click Documentation",
+            "match": {
+              "location": "stepDefinitions.DocumentationsSteps.openDocumentation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 487000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "open Knowledge Base",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Knowledge Base",
+                  "offset": 5
+                }
+              ],
+              "location": "stepDefinitions.DocumentationsSteps.openDocumentationMenuItem(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d94.0.4606.61)\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027HP_5CD049BS95_M\u0027, ip: \u002710.212.134.55\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_252\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\\Users\\MICHAE~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:59268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ae967d3a42981db60225aee49cf3842f\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027Wiki selected header-content\u0027 and text()\u003d\u0027Knowledge Base\u0027]}\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:211)\r\n\tat seleniumUtil.BasePage.fwVisibility(BasePage.java:34)\r\n\tat AdminPages.KnowledgeBasePage.verifyKnowledgePage(KnowledgeBasePage.java:19)\r\n\tat stepDefinitions.DocumentationsSteps.verifyKnowledgePageLoaded(DocumentationsSteps.java:42)\r\n\tat ✽.verify Knowledge Base page was loaded in tab 1(file:///C:/git/Autotest_6_5/WebAdmin/Features/Documentation.feature:9)\r\n",
+              "duration": 151950000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "verify Knowledge Base page was loaded in tab 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.DocumentationsSteps.verifyKnowledgePageLoaded(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "All documents are available",
+    "description": "",
+    "id": "all-documents-are-available",
+    "keyword": "Feature",
+    "uri": "file:Features/Documentation.feature",
+    "tags": []
+  }
+]
