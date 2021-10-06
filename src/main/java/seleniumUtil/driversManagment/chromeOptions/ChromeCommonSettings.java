@@ -17,6 +17,9 @@ public class ChromeCommonSettings {
     public ChromeOptions getChromeSettings(Map<String, Object> preferences) {
         final ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
+        options.addArguments("--disable-web-security");
+        options.addArguments("--allow-running-insecure-content");
+        options.addArguments("--ignore-certificate-errors");
         options.setExperimentalOption("prefs", preferences);
         return options;
     }
